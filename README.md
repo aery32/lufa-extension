@@ -7,7 +7,7 @@ port (CDC demo).
 
 ### What is LUFA?
 
-[LUFA](https://github.com/abcminiuser/lufa) LUFA is an open-source USB
+[LUFA](https://github.com/abcminiuser/lufa) is an open-source USB
 library for the USB-enabled AVR microcontrollers, released under the MIT
 license. It supports a large number of USB AVR models and boards. It is
 designed to provide an easy to use, feature rich framework for the development
