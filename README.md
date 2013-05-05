@@ -1,13 +1,24 @@
 # LUFA ported to Aery32 Framework
 
-[LUFA](https://github.com/abcminiuser/lufa) is an open-source complete
-USB stack for the USB-enabled Atmel AVR8 and (some of the) AVR32
-microcontroller series, released under the permissive MIT License.
-
 This port integrates LUFA to Aery32 Framework so you can start using USB
 straight away, for example, as a virtual com port, which is implemented in
 the example `main.cpp`. The example prints a hello message to virtual com
 port (CDC demo).
+
+### What is LUFA?
+
+[LUFA](https://github.com/abcminiuser/lufa) LUFA is an open-source USB
+library for the USB-enabled AVR microcontrollers, released under the MIT
+license. It supports a large number of USB AVR models and boards. It is
+designed to provide an easy to use, feature rich framework for the development
+of USB peripherals and hosts.
+
+LUFA focuses on the microcontroller side of USB development only; it includes
+no PC host USB driver development facilities - other projects such as the
+Windows Driver Development Kit, Windows USB Device Mode Framework and libusb
+may be of interest for developing custom OS drivers. While custom USB devices
+can be made with LUFA using such tools, the included demos all use the inbuilt
+OS drivers for each USB class for simplicity.
 
 LUFA is donation supported. To support LUFA, please donate at
 http://www.lufa-lib.org/donate
@@ -15,8 +26,8 @@ http://www.lufa-lib.org/donate
 ## Installation
 
 [Download](https://github.com/aery32/lufa-port/archive/master.zip) and
-unzip the archive of this repo directly under your Aery32 project folder. Linux users can
-use wget:
+unzip the archive of this repo directly under your Aery32 project folder.
+Linux users can use wget:
 
 ```
 cd workspace/my-aery32-project
@@ -38,6 +49,14 @@ make programs
 
 Windows users have to install `LUFA_VirtaulSerial.inf` driver when the board
 identifies.
+
+## Usage
+
+LUFA needs some settings that have been put into the global `settings.h`,
+which is a part of the Aery32 Framework. Descriptor files, `Descriptor.c` and
+`Descriptor.h` can be found from `LUFA/` directory.
+
+Learn more from [LUFA Library Documentation](http://www.fourwalledcubicle.com/files/LUFA/Doc/130303/html/).
 
 ## Licenses
 
