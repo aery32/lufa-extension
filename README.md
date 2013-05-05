@@ -1,6 +1,6 @@
 # LUFA ported to Aery32 Framework
 
-This port integrates LUFA to Aery32 Framework so you can start using USB
+This extension integrates LUFA to Aery32 Framework so you can start using USB
 straight away, for example, as a virtual com port, which is implemented in
 the example `main.cpp`. The example prints a hello message to virtual com
 port (CDC demo).
@@ -25,13 +25,13 @@ http://www.lufa-lib.org/donate
 
 ## Installation
 
-[Download](https://github.com/aery32/lufa-port/archive/master.zip) and
+[Download](https://github.com/aery32/lufa-extension/archive/master.zip) and
 unzip the archive of this repo directly under your Aery32 project folder.
 Linux users can use wget:
 
 ```
 cd workspace/my-aery32-project
-wget --no-check-certificate https://github.com/aery32/lufa-port/archive/master.tar.gz -O - | tar -xvz --strip 1
+wget --no-check-certificate https://github.com/aery32/lufa-extension/archive/master.tar.gz -O - | tar -xvz --strip 1
 ```
 
 Be sure that your project compiles (force to rebuild)
@@ -47,14 +47,14 @@ your Aery32 development board
 make programs
 ```
 
-Windows users have to install `LUFA_VirtaulSerial.inf` driver when the board
-identifies.
+Windows users have to install `LUFA_VirtaulSerial.inf` driver file from
+the `LUFA/` directory after the board has been identified by Windows.
 
 ## Usage
 
 LUFA needs some settings that have been put into the global `settings.h`,
 which is a part of the Aery32 Framework. Descriptor files, `Descriptor.c` and
-`Descriptor.h` can be found from `LUFA/` directory.
+`Descriptor.h` can be found from the `LUFA/` directory.
 
 Learn more from [LUFA Library Documentation](http://www.fourwalledcubicle.com/files/LUFA/Doc/130303/html/).
 
