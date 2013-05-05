@@ -58,6 +58,11 @@ which is a part of the Aery32 Framework. Descriptor files, `Descriptor.c` and
 
 Learn more from [LUFA Library Documentation](http://www.fourwalledcubicle.com/files/LUFA/Doc/130303/html/).
 
+### Limitations
+
+- Aery32 Framework interrupts cannot be used with LUFA. Instead you have to
+  use interrupt driver implemented by LUFA.
+
 ## Licenses
 
 Aery32 Framework is licensed under the new BSD license:
